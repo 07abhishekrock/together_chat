@@ -1,0 +1,72 @@
+<input type="hidden" name="" id="hidden_field"  value=<%=user.id%> >
+<div class="top-heading">
+    <div class="disappear"></div>
+    <span user='<%=user.username%>'><large>T</large><small>ogether</small></span>
+    <div class="tools disappear">
+        <div class="profile_pic_user "></div>
+        <div class="attach_icon "></div>
+        <div class="profile_pic " style="background-image:url('<%=user.photo%>')"></div>
+        <div class="delete-msg "></div>
+    </div>
+    <div class="profile_pic_main" style="background-image:url('<%=user.photo%>')"></div> 
+</div>
+
+<div class="new-msg"></div>
+
+
+<ul class="chat-list">
+
+</ul>
+
+<div class="chat-body">
+    <span class="date">29 Aug 2020</span>
+    <div class="chat-text-body">
+    <span class="message" type="send">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium alias repudiandae nulla recusandae quae odio quidem dolor impedit eum similique.<i>10:00</i></span>
+    <span class="message" type="receive">Lorem ipsum dolor sit amet consectetur.<i>10:15</i></span>
+    <span class="message" type="receive">lorem<i>11:00</i></span>
+    <span class="message" type="send">Lorem, ipsum <i>10:00</i></span>
+    <span class="message" type="send">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium alias repudiandae nulla recusandae quae odio quidem dolor impedit eum similique.<i>10:00</i></span>
+    </div>
+    <div class="msg_entry">
+        <textarea placeholder="enter your message..." spellcheck="false"></textarea>
+        <button class="send"></button>
+    </div>
+</div>
+
+<div class="contacts-body">
+    <div class="search-bar">
+        <input type="text" placeholder="Contact Name">
+        <div class="search-icon"></div>
+    </div>
+    <span class="progress " animate = "0"></span>
+    <ul class="contacts-list">
+        <li style="pointer-events:none">
+            <span style="background-image:url('<%=user.photo%>')"></span>
+            <div>
+                <span><%=user.username%></span>
+                <span><%=user.motto%></span>
+            </div>
+        </li>
+    </ul>
+    <div class="no-response">No response found</div>
+</div>
+
+
+<div class="footer-options" past_index = "-1">
+    <div class="option">
+        <span style="background-image:url('./res/icons/1_not_selected.svg')"></span>
+        <span>CHAT</span>
+    </div>
+    <div class="option">
+        <span style="background-image:url('./res/icons/2_not_selected.svg')"></span>
+        <span>CALLS</span>
+    </div>
+    <div class="option">
+        <span style="background-image:url('./res/icons/3_not_selected.svg')"></span>
+        <span>PROFILE</span>
+    </div>
+    <button class="collapse" face="up"></button>
+</div>
+
+
+<script defer src="/javascript/chat_interaction.js"></script>

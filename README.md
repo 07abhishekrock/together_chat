@@ -16,5 +16,5 @@ A chat app that I created to have a little fun with webSocket API and NodeJS
   <li>Clean Ui</li>
 </ul>
 
-<img src="./images/image1.jpg">
-<img src="./images/image2.jpg">
+<img src="./images/mockup_together_chat.svg">
+<img src="./images/together_chat_smartphone_mockup.svg">
